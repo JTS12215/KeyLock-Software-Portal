@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyLock Software | Privacy-First Solutions</title>
+    <style>
+        /* CORE STYLES - Inherited from your original design */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --kl-blue: #0056b3;
+            --kl-dark: #333;
+            --kl-light: #f8f9fa;
+            --kl-gold: #d4af37;
+            /* For myGolf branding accents */
+        }
+
+        body {
+            font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--kl-dark);
+            background-color: #fff;
+        }
+
+        /* NAVIGATION - Restored to exact original specifications */
+        nav {
+            background: #ffffff;
+            border-bottom: 3px solid var(--kl-blue);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 5%;
+            height: 100px;
+        }
+
+        .logo-container img {
+            height: 80px;
+            width: auto;
+            display: block;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--kl-dark);
+            font-weight: 700;
+            margin-left: 25px;
+            font-size: 1.1rem;
+        }
+
+        .nav-links a:hover {
+            color: var(--kl-blue);
+        }
+
+        /* HERO SECTION */
+        .hero {
+            text-align: center;
+            padding: 80px 10%;
+            background: linear-gradient(180deg, #fff 0%, var(--kl-light) 100%);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: #000;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* PRODUCT GRID */
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 60px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            flex: 1;
+            min-width: 320px;
+            max-width: 360px;
+            padding: 30px;
+            border: 1px solid #eee;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background: white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card h2 {
+            margin-bottom: 15px;
+            color: #000;
+        }
+
+        .product-card p {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 25px;
+            flex-grow: 1;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .tag-new {
+            background: #28a745;
+            color: white;
+        }
+
+        .tag-soon {
+            background: #ffc107;
+            color: black;
+        }
+
+        .tag-legacy {
+            background: #6c757d;
+            color: white;
+        }
+
+        /* BUTTONS */
+        .btn {
+            display: block;
+            background: var(--kl-blue);
+            color: white !important;
+            padding: 12px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: auto;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--kl-blue) !important;
+            border: 1px solid var(--kl-blue);
+        }
+
+        footer {
+            background: var(--kl-blue);
+            color: white;
+            text-align: center;
+            padding: 60px 10%;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <img src="KeyLock_Software_Logo.png" alt="KeyLock Software Logo">
+        </div>
+        <div class="nav-links">
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Innovation Built on Privacy.</h1>
+        <p>KeyLock Software creates professional-grade tools designed to put you in control of your data. No central
+            clouds. No compromises.</p>
+    </header>
+
+    <section class="product-grid" id="products">
+
+        <div class="product-card">
+            <div>
+                <span class="tag tag-new">Now Available</span>
+                <h2>KeyLock <br>myGolf Journal</h2>
+                <p>Track your rounds, analyze your stats, and manage your winnings. Built for iOS and Android with
+                    private cloud synchronization.</p>
+            </div>
+            <a href="https://mygolf.keylocksoftware.com" class="btn">Learn More</a>
+        </div>
+
+        <div class="product-card">
+            <div>
+                <span class="tag tag-soon">Coming Soon</span>
+                <h2>KeyLock <br>Password Manager Pro</h2>
+                <p>The next generation of cross-platform security. Built with AES-256-GCM encryption and universal cloud
+                    support for mobile and desktop.</p>
+            </div>
+            <a href="#" class="btn btn-secondary">Coming Soon</a>
+        </div>
+
+        <div class="product-card">
+            <div>
+                <span class="tag tag-legacy">Open Source</span>
+                <h2>Password Manager <br>(Free Edition)</h2>
+                <p>Our original v26.02.6 local password manager. Provided as-is under the GPLv3 Open Source license.</p>
+            </div>
+            <a href="https://free.keylocksoftware.com" class="btn btn-secondary">View Project</a>
+        </div>
+
+    </section>
+
+    <footer id="about">
+        <h2>About KeyLock Software</h2>
+        <p style="max-width: 800px; margin: 20px auto;">Based in Roswell, Georgia, KeyLock Software is a sole
+            proprietorship dedicated to building tools that empower users. We believe that your most sensitive data—from
+            golf scores to login credentials—belongs to you and you alone.</p>
+
+        <p style="margin-top: 30px; font-size: 0.8rem; opacity: 0.7;">
+            &copy; 2026 KeyLock Software | All Rights Reserved
+        </p>
+    </footer>
+
+</body>
+
+</html>
