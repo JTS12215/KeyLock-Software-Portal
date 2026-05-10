@@ -7,6 +7,10 @@
     <title>KeyLock Software | Privacy-First Solutions</title>
     <style>
         /* CORE STYLES - Inherited from your original design */
+        html {
+            scroll-behavior: smooth; /* Added for smooth scrolling to the top */
+        }
+        
         * {
             box-sizing: border-box;
             margin: 0;
@@ -185,13 +189,12 @@
     </style>
 </head>
 
-<body>
-
-    <nav>
+<body id="top"> <nav>
         <div class="logo-container">
-            <img src="KeyLock_Software_Logo.png" alt="KeyLock Software Logo" width="250">
+            <a href="#top"><img src="KeyLock_Software_Logo.png" alt="KeyLock Software Logo" width="250"></a>
         </div>
         <div class="nav-links">
+            <a href="#top">Home</a>
             <a href="#products">Products</a>
             <a href="#about">About</a>
         </div>
