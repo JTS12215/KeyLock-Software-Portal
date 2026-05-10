@@ -91,13 +91,23 @@
             margin: 0 auto;
         }
 
-        /* PRODUCT GRID */
+        /* PRODUCTS SECTION & GRID */
+        .products-section {
+            padding-top: 100px; /* Accounts for the sticky header so it doesn't cover the title */
+            text-align: center;
+        }
+
+        .products-section h2 {
+            font-size: 2.5rem;
+            color: #000;
+        }
+
         .product-grid {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 30px;
-            padding: 60px 5%;
+            padding: 40px 5% 60px; /* Adjusted top padding since the section header has padding */
             max-width: 1200px;
             margin: 0 auto;
         }
@@ -206,36 +216,39 @@
             clouds. No compromises.</p>
     </header>
 
-    <section class="product-grid" id="products">
+    <section class="products-section" id="products">
+        <h2>KeyLock Products</h2>
+        <div class="product-grid">
 
-        <div class="product-card">
-            <div>
-                <span class="tag tag-soon">NOW AVAILABLE</span>
-                <h2>KeyLock <br>myGolf Journal</h2>
-                <p>Track your rounds, analyze your stats, and manage your winnings. Now Available on Apple iOS. Android Coming Soon.</p>
+            <div class="product-card">
+                <div>
+                    <span class="tag tag-soon">NOW AVAILABLE</span>
+                    <h2>KeyLock <br>myGolf Journal</h2>
+                    <p>Track your rounds, analyze your stats, and manage your winnings. Now Available on Apple iOS. Android Coming Soon.</p>
+                </div>
+                <a href="https://mygolf.keylocksoftware.com" class="btn btn-secondary">View Features</a>
             </div>
-            <a href="https://mygolf.keylocksoftware.com" class="btn btn-secondary">View Features</a>
-        </div>
 
-        <div class="product-card">
-            <div>
-                <span class="tag tag-soon">Coming Soon</span>
-                <h2>KeyLock <br>Password Manager Pro</h2>
-                <p>The next generation of cross-platform security. Built with AES-256-GCM encryption and universal cloud
-                    support for mobile and desktop.</p>
+            <div class="product-card">
+                <div>
+                    <span class="tag tag-soon">Coming Soon</span>
+                    <h2>KeyLock <br>Password Manager Pro</h2>
+                    <p>The next generation of cross-platform security. Built with AES-256-GCM encryption and universal cloud
+                        support for mobile and desktop.</p>
+                </div>
+                <a href="#" class="btn btn-secondary">Coming Soon</a>
             </div>
-            <a href="#" class="btn btn-secondary">Coming Soon</a>
-        </div>
 
-        <div class="product-card">
-            <div>
-                <span class="tag tag-legacy">Open Source</span>
-                <h2>Password Manager <br>(Free Edition)</h2>
-                <p>Our original v26.02.6 local password manager. Provided as-is under the GPLv3 Open Source license.</p>
+            <div class="product-card">
+                <div>
+                    <span class="tag tag-legacy">Open Source</span>
+                    <h2>Password Manager <br>(Free Edition)</h2>
+                    <p>Our original v26.02.6 local password manager. Provided as-is under the GPLv3 Open Source license.</p>
+                </div>
+                <a href="https://free.keylocksoftware.com" class="btn btn-secondary">View Project</a>
             </div>
-            <a href="https://free.keylocksoftware.com" class="btn btn-secondary">View Project</a>
-        </div>
 
+        </div>
     </section>
 
     <footer id="about">
